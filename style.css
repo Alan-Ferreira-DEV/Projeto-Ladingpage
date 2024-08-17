@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    font-family: "Inter";
+}
+
+#menusuperior {
+    width: 96%;
+    height: 260px;
+    padding: 20px;
+    background-image: url('Imagens/Telainicial.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#titulo-menusuperior {
+    color:  #FFFFFF;
+    margin-top: 100px; 
+    margin-left: 20px;
+    width: 120%;
+    white-space: nowrap;
+    letter-spacing: 5px;
+}
+
+#texto-menusuperior {
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#menuinformacional {
+    background-color: #EAECE5;
+    font-family: "Inter";
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 45px;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-size: 2em; /* Define o mesmo tamanho para todos os números */
+}
+
+p {
+    margin-top: 10px;
+}
+
+#imagemetextocentral {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 100px; /* Alinha o texto com o texto do menu informacional */
+}
+
+#texto {
+    flex: 1;
+    text-align: left;
+    margin-right: 0;
+    font-size: 1.1em;
+}
+
+#imagem {
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+#imagem img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+#formulario {
+    text-align: center;
+    background-image: url('Imagens/Telaformulario.svg');
+
+
+}
+
+#formulario {
+    width: 96%; 
+    margin: 0 auto; 
+    padding: 40px;
+}
+
+#titulo-formulario {
+    font-size: 1.7em;
+    margin-bottom: 40px; 
+    color: #FFFFFF;
+    padding-bottom: 10px; 
+}
+
+input {
+    background-color: #EAECE5;
+    width: 30%; 
+    height: 50px; 
+    margin-bottom: 30px; 
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 15px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #C07212; 
+    color: #EAECE5;
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative; 
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #D46A2D; 
+    color: #FFFFFF; 
+    transform: translateY(-10px) translateX(-5px); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4); 
+}
+
+@keyframes buttonBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+button {
+    animation: buttonBounce 10s infinite; 
+}
