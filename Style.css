@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    font-family: "Inter";
+}
+
+html, body {
+    overflow-y: auto; /* Permite a barra de rolagem vertical */
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+}
+
+#menusuperior {
+    width: 96%;
+    height: 260px;
+    padding: 30px;
+    background-image: url('Imagens/Telainicial.svg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#titulo-menusuperior {
+    color:  #FFFFFF;
+    margin-top: 100px; 
+    margin-left: 20px;
+    width: 120%;
+    white-space: nowrap;
+    letter-spacing: 5px;
+}
+
+#texto-menusuperior {
+    color: #FFFFFF;
+    margin-top: 0px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#menuinformacional {
+    background-color: rgb(167, 164, 164);
+    font-family: "Inter", sans-serif; /* Adicionei uma fonte padrão */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Garante que o fundo ocupe toda a largura da tela */
+    padding: 20px 0; /* Adiciona espaço acima e abaixo dos textos */
+}
+
+.info-blockinformacional {
+    flex: 1; /* Permite que o bloco de texto ocupe o espaço disponível */
+    margin: 0 20px; /* Espaço horizontal entre os blocos */
+    text-align: center; /* Centraliza o texto dentro do bloco */
+}
+
+#TextoeImagem {
+    display: flex; /* Garante que o flexbox esteja ativado */
+    flex-direction: row; /* Muda para linha para que texto e imagem fiquem lado a lado */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    justify-content: space-between; /* Espaça os itens para que fiquem nas extremidades */
+    padding: 20px; /* Ajusta o padding */
+}
+
+.info-block {
+    flex: 1; /* Permite que o bloco de texto ocupe o espaço disponível */
+    margin-right: 20px; /* Espaço entre o texto e a imagem */
+    margin-top: -20px; /* Move o texto para cima */
+}
+
+
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 45px;
+    
+}
+
+h2, h3, h4 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 2em; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto (opcional, já está no .info-block) */
+}
+
+p {
+    margin-top: 10px; /* Espaço acima do parágrafo */
+}
+
+#imagemetextocentral {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 100px; /* Alinha o texto com o texto do menu informacional */
+}
+
+#texto {
+    flex: 1;
+    text-align: left;
+    margin-right: 0;
+    font-size: 1.1em;
+}
+
+#imagem {
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+#imagem img {
+    max-width: 80%;
+    height: auto;
+}
+
+#formulario {
+    text-align: center;
+    background-image: url('Imagens/Telaformulario.svg');
+}
+
+#formulario {
+    width: 96%; 
+    margin: 0 auto; 
+    padding: 40px;
+}
+
+#titulo-formulario {
+    font-size: 1.7em;
+    margin-bottom: 40px; 
+    color: #FFFFFF;
+    padding-bottom: 10px; 
+}
+
+input {
+    background-color: #EAECE5;
+    width: 30%; 
+    height: 50px; 
+    margin-bottom: 30px; 
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 15px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #C07212; 
+    color: #EAECE5;
+    width: 20%;
+    height: 40px;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer; 
+    position: relative; 
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: #D46A2D; 
+    color: #FFFFFF; 
+    transform: translateY(-10px) translateX(-5px); 
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4); 
+}
+
+@keyframes buttonBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+button {
+    animation: buttonBounce 10s infinite; 
+}
+
+
+/* Estilos para dispositivos com largura máxima de 600px (celulares) */
+@media (max-width: 600px) {
+    #menusuperior {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 15px; /* Ajusta o padding para dispositivos menores */
+    }
+
+    #titulo-menusuperior {
+        font-size: 1.5em; /* Reduz o tamanho da fonte para o título */
+        margin-top: 50px; /* Ajusta a margem superior */
+        margin-left: 10px; /* Ajusta a margem esquerda */
+        width: 100%; /* Ajusta a largura para 100% */
+    }
+
+    #texto-menusuperior {
+        font-size: 0.9em; /* Reduz o tamanho da fonte do texto */
+        margin-left: 10px; /* Ajusta a margem esquerda */
+    }
+
+    #menuinformacional {
+        flex-direction: column; /* Muda para coluna para melhor visualização */
+        align-items: center; /* Centraliza os itens */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .info-block {
+        margin-top: 20px; /* Ajusta a margem superior */
+        align-items: center; /* Centraliza os blocos de informação */
+    }
+
+    #imagemetextocentral {
+        padding-left: 0; /* Remove o padding à esquerda */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    #formulario {
+        padding: 20px; /* Ajusta o padding do formulário */
+    }
+
+    input {
+        width: 80%; /* Aumenta a largura dos inputs para ocupar mais espaço */
+    }
+
+    button {
+        width: 80%; /* Aumenta a largura dos botões para ocupar mais espaço */
+    }
+}
+
+
+
+/* Estilos para dispositivos com largura máxima de 600px (celulares) */
+@media (max-width: 600px) {
+    #menusuperior {
+        height: auto; /* Permite que a altura se ajuste ao conteúdo */
+        padding: 15px; /* Ajusta o padding para dispositivos menores */
+        text-align: center; /* Centraliza o texto no topo */
+    }
+
+    #titulo-menusuperior {
+        font-size: 1.5em; /* Tamanho do título */
+        margin: 10px 0; /* Margem em cima e embaixo */
+        text-align: center; /* Centraliza o título */
+    }
+
+    #texto-menusuperior {
+        font-size: 1em; /* Tamanho do texto de apresentação */
+        margin: 5px 0; /* Margem em cima e embaixo */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    #menuinformacional {
+        display: flex; /* Garante que o flexbox esteja ativado */
+        flex-direction: column; /* Muda para coluna para melhor visualização */
+        align-items: center; /* Centraliza os itens */
+        padding: 10px; /* Ajusta o padding */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .info-block {
+        margin-top: 20px; /* Ajusta a margem superior */
+        text-align: center; /* Centraliza o texto dentro de cada bloco */
+    }
+
+    #TextoeImagem {
+        flex-direction: column; /* Muda para coluna para que o texto fique acima da imagem */
+        align-items: center; /* Centraliza os itens dentro do bloco */
+    }
+
+    #imagem {
+        margin-top: 10px; /* Espaço acima da imagem */
+        display: flex;
+        justify-content: center; /* Centraliza a imagem */
+        align-items: center; /* Alinha a imagem verticalmente */
+    }
+
+    #formulario {
+        padding: 20px; /* Ajusta o padding do formulário */
+        margin: 20px auto; /* Centraliza o formulário */
+        width: 90%; /* Ajusta a largura do formulário */
+        background: #EAECE5; /* Cor de fundo do formulário */
+        border-radius: 10px; /* Bordas arredondadas */
+        text-align: center; /* Centraliza o conteúdo do formulário */
+    }
+
+    input {
+        width: 80%; /* Aumenta a largura dos inputs para ocupar mais espaço */
+        height: 50px; /* Altura do input */
+        margin: 10px 0; /* Margem em cima e embaixo */
+        border-radius: 10px; /* Bordas arredondadas */
+        border: 1px solid #ccc; /* Borda do input */
+        padding-left: 15px; /* Espaçamento interno */
+    }
+
+    button {
+        width: 80%; /* Aumenta a largura dos botões para ocupar mais espaço */
+        height: 50px; /* Altura do botão */
+        background-color: #C07212; /* Cor de fundo do botão */
+        color: #EAECE5; /* Cor do texto do botão */
+        border: none; /* Remove a borda */
+        border-radius: 10px; /* Bordas arredondadas */
+        cursor: pointer; /* Cursor de ponteiro */
+        margin-top: 10px; /* Margem acima do botão */
+    }
+
+    button:hover {
+        background-color: #D46A2D; /* Cor do botão ao passar o mouse */
+        color: #FFFFFF; /* Cor do texto ao passar o mouse */
+    }
+}
